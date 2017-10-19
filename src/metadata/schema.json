@@ -496,7 +496,7 @@
                         ]
                     },
                     {
-                        "type": "JSON",
+                        "type": "json",
                         "parameters": [
                             "kind",
                             "id",
@@ -804,7 +804,7 @@
                 }
             ],
             "vendorRequest": {
-                "url": "https:\/\/www.googleapis.com\/tasks\/v1\/lists\/{$data['tasklists']}\/tasks",
+                "url": "https:\/\/www.googleapis.com\/tasks\/v1\/lists\/{$data['tasklist']}\/tasks",
                 "method": "get",
                 "requestParameters": [
                     {

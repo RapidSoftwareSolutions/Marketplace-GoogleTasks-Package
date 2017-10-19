@@ -16,7 +16,7 @@ $app->post('/api/GoogleTasks/updateTaskList', function ($request, $response) {
     $optionalParams = ['updated'=>'updated','selfLink'=>'selfLink','title'=>'title','etag'=>'etag','kind'=>'kind','fields'=>'fields'];
     $bodyParams = [
        'query' => ['access_token','fields'],
-       'JSON' => ['kind','id','etag','title','selfLink','updated']
+       'json' => ['kind','id','etag','title','selfLink','updated']
     ];
 
     $data = \Models\Params::createParams($requiredParams, $optionalParams, $post_data['args']);

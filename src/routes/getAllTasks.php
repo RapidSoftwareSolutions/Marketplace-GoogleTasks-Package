@@ -59,9 +59,8 @@ $app->post('/api/GoogleTasks/getAllTasks', function ($request, $response) {
 
 
     $client = $this->httpClient;
-    $query_str = "https://www.googleapis.com/tasks/v1/lists/{$data['tasklists']}/tasks";
+    $query_str = "https://www.googleapis.com/tasks/v1/lists/{$data['tasklist']}/tasks";
 
-    
 
     $requestParams = \Models\Params::createRequestBody($data, $bodyParams);
     $requestParams['headers'] = [];
