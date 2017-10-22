@@ -16,7 +16,7 @@ $app->post('/api/GoogleTasks/createTaskList', function ($request, $response) {
     $optionalParams = ['updated'=>'updated','selfLink'=>'selfLink','title'=>'title','etag'=>'etag','id'=>'id','kind'=>'kind','fields'=>'fields'];
     $bodyParams = [
        'query' => ['access_token','fields'],
-       'JSON' => ['kind','id','etag','title','selfLink','updated']
+       'json' => ['kind','id','etag','title','selfLink','updated']
     ];
 
     $data = \Models\Params::createParams($requiredParams, $optionalParams, $post_data['args']);
@@ -26,7 +26,7 @@ $app->post('/api/GoogleTasks/createTaskList', function ($request, $response) {
         $data['updated'] = \Models\Params::toFormat($data['updated'], 'Y-m-d\TH:i:sP');
     }
 
-    if(empty($data['fields']))
+    if(!empty($data['fields']))
     {
         $data['fields'] = \Models\Params::toString($data['fields'], ',');
     }

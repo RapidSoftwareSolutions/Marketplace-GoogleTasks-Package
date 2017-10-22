@@ -213,7 +213,7 @@
                 {
                     "name": "fields",
                     "type": "List",
-                    "info": "List of fields.To display all fields, use `*`. Examples: user,id",
+                    "info": "List of fields.To display all fields, use `*`. Examples: id",
                     "required": false,
                     "structure": {
                         "name": "field",
@@ -273,7 +273,7 @@
                 {
                     "name": "fields",
                     "type": "List",
-                    "info": "List of fields.To display all fields, use `*`. Examples: user,id",
+                    "info": "List of fields.To display all fields, use `*`. Examples: id",
                     "required": false,
                     "structure": {
                         "name": "field",
@@ -367,7 +367,7 @@
                 {
                     "name": "fields",
                     "type": "List",
-                    "info": "List of fields.To display all fields, use `*`. Examples: user,id",
+                    "info": "List of fields.To display all fields, use `*`. Examples: id",
                     "required": false,
                     "structure": {
                         "name": "field",
@@ -391,7 +391,7 @@
                         ]
                     },
                     {
-                        "type": "JSON",
+                        "type": "json",
                         "parameters": [
                             "kind",
                             "id",
@@ -472,7 +472,7 @@
                 {
                     "name": "fields",
                     "type": "List",
-                    "info": "List of fields.To display all fields, use `*`. Examples: user,id",
+                    "info": "List of fields.To display all fields, use `*`. Examples: id",
                     "required": false,
                     "structure": {
                         "name": "field",
@@ -537,20 +537,6 @@
                     "type": "String",
                     "info": "Task list identifier.",
                     "required": true
-                },
-                {
-                    "name": "fields",
-                    "type": "List",
-                    "info": "List of fields.To display all fields, use `*`. Examples: user,id",
-                    "required": false,
-                    "structure": {
-                        "name": "field",
-                        "type": "String",
-                        "info": "Single filed name.To display all fields, use `*`."
-                    },
-                    "vendorSchema": {
-                        "format": "toString:{,}"
-                    }
                 }
             ],
             "vendorRequest": {
@@ -635,7 +621,7 @@
                 {
                     "name": "fields",
                     "type": "List",
-                    "info": "List of fields.To display all fields, use `*`. Examples: user,id",
+                    "info": "List of fields.To display all fields, use `*`. Examples: id",
                     "required": false,
                     "structure": {
                         "name": "field",
@@ -791,7 +777,7 @@
                 {
                     "name": "fields",
                     "type": "List",
-                    "info": "List of fields.To display all fields, use `*`. Examples: user,id",
+                    "info": "List of fields.To display all fields, use `*`. Examples: id",
                     "required": false,
                     "structure": {
                         "name": "field",
@@ -865,7 +851,7 @@
                 {
                     "name": "fields",
                     "type": "List",
-                    "info": "List of fields.To display all fields, use `*`. Examples: user,id",
+                    "info": "List of fields.To display all fields, use `*`. Examples: id",
                     "required": false,
                     "structure": {
                         "name": "field",
@@ -1069,7 +1055,7 @@
                 {
                     "name": "fields",
                     "type": "List",
-                    "info": "List of fields.To display all fields, use `*`. Examples: user,id.",
+                    "info": "List of fields.To display all fields, use `*`. Examples: id.",
                     "required": false,
                     "structure": {
                         "name": "field",
@@ -1295,7 +1281,7 @@
                 {
                     "name": "fields",
                     "type": "List",
-                    "info": "List of fields.To display all fields, use `*`. Examples: user,id.",
+                    "info": "List of fields.To display all fields, use `*`. Examples: id.",
                     "required": false,
                     "structure": {
                         "name": "field",
@@ -1375,20 +1361,6 @@
                     "type": "String",
                     "info": "Task list identifier.",
                     "required": true
-                },
-                {
-                    "name": "fields",
-                    "type": "List",
-                    "info": "List of fields.To display all fields, use `*`. Examples: user,id",
-                    "required": false,
-                    "structure": {
-                        "name": "field",
-                        "type": "String",
-                        "info": "Single filed name.To display all fields, use `*`."
-                    },
-                    "vendorSchema": {
-                        "format": "toString:{,}"
-                    }
                 }
             ],
             "vendorRequest": {
@@ -1433,20 +1405,6 @@
                     "type": "String",
                     "info": "Task list identifier.",
                     "required": true
-                },
-                {
-                    "name": "fields",
-                    "type": "List",
-                    "info": "List of fields.To display all fields, use `*`. Examples: user,id",
-                    "required": false,
-                    "structure": {
-                        "name": "field",
-                        "type": "String",
-                        "info": "Single filed name.To display all fields, use `*`."
-                    },
-                    "vendorSchema": {
-                        "format": "toString:{,}"
-                    }
                 }
             ],
             "vendorRequest": {
@@ -1513,7 +1471,7 @@
                 {
                     "name": "fields",
                     "type": "List",
-                    "info": "List of fields.To display all fields, use `*`. Examples: user,id",
+                    "info": "List of fields.To display all fields, use `*`. Examples: id",
                     "required": false,
                     "structure": {
                         "name": "field",
@@ -1717,7 +1675,7 @@
                 {
                     "name": "fields",
                     "type": "List",
-                    "info": "List of fields.To display all fields, use `*`. Examples: user,id.",
+                    "info": "List of fields.To display all fields, use `*`. Examples: id.",
                     "required": false,
                     "structure": {
                         "name": "field",

@@ -24,7 +24,7 @@ $app->post('/api/GoogleTasks/updateTaskList', function ($request, $response) {
 
     if(!empty($data['updated']))
     {
-        $data['updated'] = \Models\Params::toFormat($data['updated'], 'Y-m-d\TH:i:sP');
+        $data['updated'] = \Models\Params::toFormat($data['updated'], 'Y-m-d\TH:i:s.uP');
     }
 
     if(!empty($data['fields']))

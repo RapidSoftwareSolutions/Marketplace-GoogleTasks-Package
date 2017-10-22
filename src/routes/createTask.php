@@ -34,7 +34,8 @@ $app->post('/api/GoogleTasks/createTask', function ($request, $response) {
 
     if(!empty($data['updated']))
     {
-        $data['updated'] = \Models\Params::toFormat($data['updated'], 'Y-m-d\TH:i:sP');
+        $data['updated'] = \Models\Params::toFormat($data['updated'], 'Y-m-d\TH:i:s.uP');
+        //$data['updated'] = str_replace('+','-',$data['updated']);
     }
 
     if(!empty($data['fields']))

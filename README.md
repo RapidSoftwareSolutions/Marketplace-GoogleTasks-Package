@@ -46,7 +46,7 @@ Returns all the authenticated user's task lists.
 | accessToken| String| Access Token. Use getAccessToken to get it.
 | maxResults | Number| Maximum number of task lists returned on one page. Optional. The default is 100.
 | pageToken  | String| Token specifying the result page to return. Optional.
-| fields     | List  | List of fields.To display all fields, use `*`. Examples: user,id
+| fields     | List  | List of fields.To display all fields, use `*`. Examples: id
 
 ## GoogleTasks.getTaskList
 Returns the authenticated user's specified task list.
@@ -55,7 +55,7 @@ Returns the authenticated user's specified task list.
 |------------|-------|----------
 | accessToken| String| Access Token. Use getAccessToken to get it.
 | tasklist   | String| Task list identifier.
-| fields     | List  | List of fields.To display all fields, use `*`. Examples: user,id
+| fields     | List  | List of fields.To display all fields, use `*`. Examples: id
 
 ## GoogleTasks.createTaskList
 Creates a new task list and adds it to the authenticated user's task lists.
@@ -69,7 +69,7 @@ Creates a new task list and adds it to the authenticated user's task lists.
 | etag       | String    | ETag of the resource.
 | id         | String    | Task list identifier.
 | kind       | Select    | Type of the resource.
-| fields     | List      | List of fields.To display all fields, use `*`. Examples: user,id
+| fields     | List      | List of fields.To display all fields, use `*`. Examples: id
 
 ## GoogleTasks.updateTaskList
 Updates the authenticated user's specified task list.
@@ -83,7 +83,7 @@ Updates the authenticated user's specified task list.
 | etag       | String    | ETag of the resource.
 | id         | String    | Task list identifier.
 | kind       | Select    | Type of the resource.
-| fields     | List      | List of fields.To display all fields, use `*`. Examples: user,id
+| fields     | List      | List of fields.To display all fields, use `*`. Examples: id
 
 ## GoogleTasks.deleteTaskList
 Deletes the authenticated user's specified task list.
@@ -92,7 +92,6 @@ Deletes the authenticated user's specified task list.
 |------------|-------|----------
 | accessToken| String| Access Token. Use getAccessToken to get it.
 | tasklist   | String| Task list identifier.
-| fields     | List  | List of fields.To display all fields, use `*`. Examples: user,id
 
 ## GoogleTasks.patchTaskList
 Updates the authenticated user's specified task list. This method supports patch semantics.
@@ -106,7 +105,7 @@ Updates the authenticated user's specified task list. This method supports patch
 | etag       | String    | ETag of the resource.
 | id         | String    | Task list identifier.
 | kind       | Select    | Type of the resource.
-| fields     | List      | List of fields.To display all fields, use `*`. Examples: user,id
+| fields     | List      | List of fields.To display all fields, use `*`. Examples: id
 
 ## GoogleTasks.getAllTasks
 Returns all tasks in the specified task list.
@@ -125,7 +124,7 @@ Returns all tasks in the specified task list.
 | dueMax       | DatePicker| Upper bound for a task's due date (as a RFC 3339 timestamp) to filter by. Optional. The default is not to filter by due date.
 | completedMax | DatePicker| Upper bound for a task's completion date (as a RFC 3339 timestamp) to filter by. Optional. The default is not to filter by completion date.
 | completedMin | DatePicker| Lower bound for a task's completion date (as a RFC 3339 timestamp) to filter by. Optional. The default is not to filter by completion date.
-| fields       | List      | List of fields.To display all fields, use `*`. Examples: user,id
+| fields       | List      | List of fields.To display all fields, use `*`. Examples: id
 
 ## GoogleTasks.getTask
 Returns the specified task.
@@ -135,7 +134,7 @@ Returns the specified task.
 | accessToken| String| Access Token. Use getAccessToken to get it.
 | tasklistId | String| Task list identifier.
 | taskId     | String| Task list identifier.
-| fields     | List  | List of fields.To display all fields, use `*`. Examples: user,id
+| fields     | List  | List of fields.To display all fields, use `*`. Examples: id
 
 ## GoogleTasks.createTask
 Creates a new task on the specified task list.
@@ -161,7 +160,7 @@ Creates a new task on the specified task list.
 | kind       | Select    | Type of the resource.
 | parent     | String    | Parent task identifier. If the task is created at the top level, this parameter is omitted. Optional.
 | previous   | String    | Previous sibling task identifier. If the task is created at the first position among its siblings, this parameter is omitted. Optional.
-| fields     | List      | List of fields.To display all fields, use `*`. Examples: user,id.
+| fields     | List      | List of fields.To display all fields, use `*`. Examples: id.
 
 ## GoogleTasks.updateTask
 Creates a new task on the specified task list.
@@ -187,7 +186,7 @@ Creates a new task on the specified task list.
 | kind       | Select    | Type of the resource.
 | parent     | String    | Parent task identifier. If the task is created at the top level, this parameter is omitted. Optional.
 | previous   | String    | Previous sibling task identifier. If the task is created at the first position among its siblings, this parameter is omitted. Optional.
-| fields     | List      | List of fields.To display all fields, use `*`. Examples: user,id.
+| fields     | List      | List of fields.To display all fields, use `*`. Examples: id.
 
 ## GoogleTasks.deleteTask
 Deletes the specified task from the task list.
@@ -197,7 +196,6 @@ Deletes the specified task from the task list.
 | accessToken| String| Access Token. Use getAccessToken to get it.
 | tasklistId | String| Task list identifier.
 | taskId     | String| Task list identifier.
-| fields     | List  | List of fields.To display all fields, use `*`. Examples: user,id
 
 ## GoogleTasks.clearTaskList
 Deletes the specified task from the task list.
@@ -206,7 +204,6 @@ Deletes the specified task from the task list.
 |------------|-------|----------
 | accessToken| String| Access Token. Use getAccessToken to get it.
 | tasklistId | String| Task list identifier.
-| fields     | List  | List of fields.To display all fields, use `*`. Examples: user,id
 
 ## GoogleTasks.moveTask
 Moves the specified task to another position in the task list. This can include putting it as a child task under a new parent and/or move it to a different position among its sibling tasks.
@@ -218,7 +215,7 @@ Moves the specified task to another position in the task list. This can include 
 | taskId     | String| Task identifier.
 | parent     | String| New parent task identifier. If the task is moved to the top level, this parameter is omitted. Optional.
 | previous   | String| New previous sibling task identifier. If the task is moved to the first position among its siblings, this parameter is omitted. Optional.
-| fields     | List  | List of fields.To display all fields, use `*`. Examples: user,id
+| fields     | List  | List of fields.To display all fields, use `*`. Examples: id
 
 ## GoogleTasks.patchTask
 Updates the specified task. This method supports patch semantics.
@@ -244,5 +241,5 @@ Updates the specified task. This method supports patch semantics.
 | kind       | Select    | Type of the resource.
 | parent     | String    | Parent task identifier. If the task is created at the top level, this parameter is omitted. Optional.
 | previous   | String    | Previous sibling task identifier. If the task is created at the first position among its siblings, this parameter is omitted. Optional.
-| fields     | List      | List of fields.To display all fields, use `*`. Examples: user,id.
+| fields     | List      | List of fields.To display all fields, use `*`. Examples: id.
 
